@@ -22,7 +22,7 @@ jobs:
       - name: Controleer op nieuwe kamers
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: python3 kamerwacht.py --once
+        run: python3 kamerwacht.py --test
 
       - name: Onthoud welke kamers al gezien zijn
         run: |
